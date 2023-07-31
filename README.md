@@ -9,8 +9,8 @@ apt install docker-compose -y
 ```
 
 ```bash
-git clone https://github.com/bibicadotnet/docker-imgproxy-tachyon-wordpress.git
-cd docker-imgproxy-tachyon-wordpress
+git clone https://github.com/bibicadotnet/docker-imgproxy-img-bibica-net.git
+cd docker-imgproxy-img-bibica-net
 docker-compose up -d --build --remove-orphans --force-recreate
 
 #xóa cache
