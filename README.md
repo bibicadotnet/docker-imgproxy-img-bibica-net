@@ -11,6 +11,7 @@ Chạy mặc định trên subdomain imgproxy: img.bibica.net (ảnh gốc đư�
 6. Tăng thời gian cache mặc định lên 1 năm
 7. Tắt sử dụng watermark như mặc định
 8. Tăng các file extensions có thể xử lý lên jpe?g|png|gif|tiff?|webp|avif|svg|bmp
+9. Có thể sửa chỗ nào đó mà không nhớ :D
 
 ## Cài đặt
 Cài đặt docker và docker-compose
