@@ -1,7 +1,19 @@
 # Ultra Image Server
 Bản sửa lại từ docker-imgproxy (https://github.com/shinsenter/docker-imgproxy)
+Chạy mặc định trên subdomain imgproxy: img.bibica.net (ảnh gốc được lấy từ bibica.net)
+
+## Các thay đổi
+1. Không sử dụng WEBP, AVIF
+2. Tăng giới hạn kích thước và dung lượng file
+3. Đổi query width -> w (cho ngắn và dễ nhớ, tương tự Photon)
+4. Bổ sung IMGPROXY_SET_CANONICAL_HEADER
+5. Tăng thời gian timeout read, write, download, alive ... lên cao hơn 1 chút
+6. Tăng thời gian cache mặc định lên 1 năm
+7. Tắt sử dụng watermark như mặc định
+8. Tăng các file extensions có thể xử lý lên jpe?g|png|gif|tiff?|webp|avif|svg|bmp
 
 ## Cài đặt
+Cài đặt docker và docker-compose
 ```bash
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker $(whoami)
@@ -9,14 +21,17 @@ sudo systemctl start docker
 sudo systemctl enable docker
 apt install docker-compose -y
 ```
-
+Cài đặt imgproxy cho domain img.bibica.net
 ```bash
 git clone https://github.com/bibicadotnet/docker-imgproxy-img-bibica-net.git
 cd docker-imgproxy-img-bibica-net
 docker-compose up -d --build --remove-orphans --force-recreate
-
-#xóa cache
+```
+Sau này có chỉnh sửa gì, thì chạy
+```bash
+cd docker-imgproxy-img-bibica-net
 rm -rf cache/
+docker-compose up -d --build --remove-orphans --force-recreate
 ```
 ## Tạo URL parameters cho ảnh trên Wordpress
 Sử dụng Code Snippets tạo 1 file php với nội dung:
