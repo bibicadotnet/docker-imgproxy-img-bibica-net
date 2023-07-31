@@ -79,4 +79,4 @@ add_filter('the_content', 'replace_text');
 
 ```
 ## Sử dụng
-Link ảnh bên trong sẽ được thêm ?w=300 cho các ảnh thumbnail, các định dạng khác sẽ thêm ?w=768
+Link ảnh bên trong sẽ được thêm ?w=300 cho các ảnh thumbnail, các định dạng khác sẽ thêm ?w=768, tùy thuộc theme đang dùng ra làm sao thì có thể cần chỉnh sửa thêm ở phần Tạo URL parameters
