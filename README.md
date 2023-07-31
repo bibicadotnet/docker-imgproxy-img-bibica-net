@@ -65,6 +65,7 @@ function jetpack_photon_custom($attr, $attachment, $size) {
 }
 
 add_filter('wp_get_attachment_image_attributes', 'jetpack_photon_custom', 999 , 3);
+
 function replace_text($text) {
 	$text = str_replace('.jpg" alt', '.jpg?w=768" alt', $text);
 	$text = str_replace('.jpeg" alt', '.jpeg?w=768" alt', $text);
