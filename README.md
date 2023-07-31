@@ -1,6 +1,6 @@
 # Ultra Image Server
-Bản sửa lại từ docker-imgproxy (https://github.com/shinsenter/docker-imgproxy)
-Chạy mặc định trên subdomain imgproxy: img.bibica.net (ảnh gốc được lấy từ bibica.net)
+Bản sửa lại từ docker-imgproxy (https://github.com/shinsenter/docker-imgproxy) <br>
+Chạy mặc định trên subdomain imgproxy img.bibica.net (ảnh gốc được lấy từ bibica.net)
 
 ## Các thay đổi
 1. Không sử dụng WEBP, AVIF
