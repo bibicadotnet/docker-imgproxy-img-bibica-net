@@ -99,6 +99,7 @@ services:
     #  IMGPROXY_ENFORCE_WEBP: "true"
       IMGPROXY_SET_CANONICAL_HEADER: "true"
       IMGPROXY_USE_LAST_MODIFIED: "true"
+      IMGPROXY_ENABLE_CLIENT_HINTS: "true"
       
       # ban PRO (không có tac dung o ban thuong)
       IMGPROXY_WEBP_COMPRESSION: "lossless"
